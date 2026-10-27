@@ -19,3 +19,6 @@ __all__ = [
     "CodeSummarizationTask",
     "CodeTranslationTask",
 ]
+
+from .code_pseudocode import CodePseudocodeTask
+__all__.append("CodePseudocodeTask")

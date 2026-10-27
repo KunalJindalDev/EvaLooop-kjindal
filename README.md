@@ -449,3 +449,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **EvaLoop** - Robust LLM Evaluation Made Simple 🔄
+
+## Assignment 4: code ↔ pseudocode extension
+
+See [assignment4/README.md](assignment4/README.md) for the research protocol,
+Colab instructions, modifications, and reproducibility details. The extension
+adds one registered task and an isolated experiment driver; it reuses the
+upstream task extractors and EvalPlus tester. Run it with
+`python -m assignment4.run`, rather than the original evaluate CLI.
