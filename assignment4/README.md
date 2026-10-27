@@ -1,6 +1,6 @@
 # Assignment 4: code ↔ pseudocode
 
-Status: all four GPU experiments completed and their result records passed independent validation. The report and 20-case analysis are drafted; student confirmation of the case review remains pending.
+Status: all four GPU experiments completed and their result records passed independent validation. The student has confirmed initial inspection of the 20 failure cases and review of the analysis and report. The report remains a working draft for further revision before submission.
 
 Public fork: https://github.com/KunalJindalDev/EvaLooop-kjindal
 Upstream: https://github.com/evalooop/EvaLooop at `ce22fe2f80c8f36da85cc8a0cca49c2bcc8b1cb9`.
@@ -59,9 +59,11 @@ Upstream `CodeGenerationTask.create_prompt` formats the task and `extract_output
 
 The analyzer creates paired per-task comparisons and a worksheet containing ten extension failures per model, prioritizing failures after at least one successful cycle. `failure_evidence.json` includes their complete extension and matched baseline records. Read original prompt, last passing code, its pseudocode, and first failing code. Fill `failure_review.csv` yourself with category, concrete evidence, baseline comparison and reviewer. Suggested categories: omitted requirement; return type/order/duplicate drift; inability to implement preserved description; function interface drift; code extraction/truncation; initial-generation error; ambiguous. Separate direct observations from inferred causes. Initial-generation failures cannot be attributed to the reverse task.
 
-Inspect at least 20 actual failed extension loops. If there are fewer, enlarge the common task set for all four runs using a new output directory and explicitly document the extension of the sample. Do not overwrite original runs or cherry-pick successful results. Include one extension-induced failure relative to baseline and one sustained case if observed; otherwise state that the requested type was not observed. Report rankings, effect size, task-level wins/losses/ties and threats to validity. The draft is `REPORT_DRAFT.md`; replace pending sections with evidence and render at most three single-column pages.
+Inspect at least 20 actual failed extension loops. If there are fewer, enlarge the common task set for all four runs using a new output directory and explicitly document the extension of the sample. Do not overwrite original runs or cherry-pick successful results. Include one extension-induced failure relative to baseline and one sustained case if observed; otherwise state that the requested type was not observed. Report rankings, effect size, task-level wins/losses/ties and threats to validity. The current working draft is `REPORT_DRAFT.md`; review revisions against the saved evidence and keep the rendered report within three single-column pages.
 
-No model is used as an automatic judge/classifier. Development was assisted by the coding assistant; its exact backend model identifier is not exposed in this session. Disclose that assistance according to course policy. Do not call machine-written labels human/manual review.
+### AI assistance and responsibility
+
+I used a coding assistant to help implement and debug the extension and prepare preliminary analysis and report text. I ran the experiments in Colab, managed the resulting artifacts, inspected the 20 failure cases, and reviewed the analysis and report. I take responsibility for all answers, interpretations, and conclusions in this submission, including any errors. No AI judge was used to determine test outcomes or calculate ASL.
 
 ## Public fork and final submission
 
